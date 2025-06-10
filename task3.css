@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0c0e10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.quiz-container {
+    background-color: rgb(83, 80, 80);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+label {
+    margin-left: 8px;
+}
+
+button {
+    margin-top: 20px;
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Joke Container Styles */
+#jokeContainer {
+    margin-top: 20px;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+#jokeContainer.hidden {
+    display: none;
+}
+
+#jokeSetup {
+    font-size: 18px;
+    color: #444;
+}
+
+#jokePunchline {
+    font-size: 20px;
+    font-weight: bold;
+    color: #222;
+    margin-top: 10px;
+}

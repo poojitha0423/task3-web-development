@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quiz App</title>
+  <link rel="stylesheet" href="task3.css" />
+</head>
+<body>
+  <div class="quiz-container" id="quiz">
+    <h2 id="question">Loading question...</h2>
+    <ul>
+      <li>
+        <input type="radio" name="answer" id="a" class="answer" />
+        <label for="a" id="a_text"></label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="b" class="answer" />
+        <label for="b" id="b_text"></label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="c" class="answer" />
+        <label for="c" id="c_text"></label>
+      </li>
+      <li>
+        <input type="radio" name="answer" id="d" class="answer" />
+        <label for="d" id="d_text"></label>
+      </li>
+    </ul>
+    <button id="submit">Submit</button>
+  </div>
+
+  <!-- Joke container appears after quiz ends -->
+  <div id="jokeContainer" class="hidden">
+    <h3>Enjoy a joke while you're here!</h3>
+    <p id="jokeSetup">Loading...</p>
+    <p id="jokePunchline"></p>
+    <button id="nextJokeBtn" onclick="fetchJoke()">Next Joke</button>
+  </div>
+
+  <script src="task3.js"></script>
+</body>
+</html>
